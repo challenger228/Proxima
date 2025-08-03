@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Définition du type de document et de l'encodage -->
+    <meta charset="UTF-8">
+    <!-- Configuration de la vue pour les appareils mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title>Proxima - Agence Créative & Marketing Digital</title>
+    <!-- Lien vers notre fichier CSS personnalisé -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Lien vers Font Awesome pour les icônes -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation principale -->
+    <nav class="navbar">
+        <!-- Conteneur principal de la navigation -->
+        <div class="nav-container">
+            <!-- Section de gauche : Logo et branding -->
+            <div class="brand-section">
+                <!-- Logo cliquable avec l'image SVG de la marque -->
+                <div class="logo">
+                    <!-- Lien cliquable vers la page d'accueil -->
+                    <a href="#" class="logo-link">
+                        <!-- Image SVG du logo Proxima -->
+                        <img src="assets/images/svg logo proxima top.svg" alt="Proxima Logo" class="logo-image">
+                        <!-- Symbole de marque déposée -->
+                        <span class="trademark">®</span>
+                    </a>
+                </div>
+                <!-- Texte descriptif de l'agence -->
+                <div class="agency-text">CREATIVE AGENCY</div>
+            </div>
+
+            <!-- Section de droite : Liens de navigation -->
+            <div class="nav-links">
+                <!-- Lien vers la page d'accueil (actif par défaut) -->
+                <a href="#" class="nav-link active">Accueil</a>
+                <!-- Lien vers les services -->
+                <a href="#" class="nav-link">Services</a>
+                <!-- Lien vers à propos de nous -->
+                <a href="#" class="nav-link">À propos de nous</a>
+                <!-- Lien vers la confidentialité -->
+                <a href="#" class="nav-link">Confidentialité</a>
+                <!-- Lien vers la page de contact -->
+                <a href="#" class="nav-link">Contact</a>
+                <!-- Bouton hamburger pour le menu mobile -->
+                <button class="hamburger-menu" id="hamburger-menu">
+                    <!-- Première ligne du menu hamburger -->
+                    <span class="hamburger-line"></span>
+                    <!-- Deuxième ligne du menu hamburger -->
+                    <span class="hamburger-line"></span>
+                    <!-- Troisième ligne du menu hamburger -->
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Ligne de séparation pointillée en bas de la navbar -->
+        <div class="separator-line"></div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero-section">
+        <!-- Conteneur principal du hero -->
+        <div class="hero-container">
+            <!-- Navigation des catégories -->
+            <div class="hero-categories">
+                <span class="category-item animated" data-delay="0">Design</span>
+                <span class="category-separator animated" data-delay="500">•</span>
+                <span class="category-item animated" data-delay="1000">Marketing</span>
+                <span class="category-separator animated" data-delay="1500">•</span>
+                <span class="category-item animated" data-delay="2000">Relation publique</span>
+                <span class="category-separator animated" data-delay="2500">•</span>
+                <span class="category-item animated" data-delay="3000">Événementiel</span>
+                <span class="category-separator animated" data-delay="3500">•</span>
+                <span class="category-item animated" data-delay="4000">Audiovisuel</span>
+            </div>
+            
+            <!-- Contenu principal du hero -->
+            <div class="hero-content">
+                <!-- Texte principal à gauche -->
+                <div class="hero-text">
+                    <div class="hero-subtitle">NOUS SOMMES PROXIMA®</div>
+                    <h1 class="hero-title">
+                        Plus qu'une<br>
+                        agence créative,<br>
+                        <span class="hero-highlight">nous sommes innovants.</span>
+                    </h1>
+                </div>
+                
+                <!-- Conteneur des cartes à droite -->
+                <div class="hero-cards-container">
+                    <!-- Carte de contact à droite -->
+                    <div class="hero-contact-card">
+                        <div class="contact-avatar">
+                            <img src="assets/images/elisee zoglo.jpg" alt="Client de la semaine" class="avatar-image">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="contact-info">
+                            <div class="client-label">Client de la semaine</div>
+                            <div class="contact-name">Jean Dupont</div>
+                            <div class="contact-role">
+                                <a href="#" class="company-link">TechCorp</a> • Design Web
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte événement à venir -->
+                    <div class="hero-event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="event-info">
+                            <div class="event-title">Événement à venir</div>
+                            <div class="event-details">Salon Digital • 15 Mars 2025</div>
+                            <a href="#" class="event-details-link">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fond avec vidéo professionnelle -->
+        <div class="hero-background">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="assets/videos/hero.mp4" type="video/mp4">
+                <!-- Fallback pour les navigateurs qui ne supportent pas la vidéo -->
+                <div class="video-fallback"></div>
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Menu mobile overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-container">
+            <!-- En-tête du menu mobile -->
+            <div class="mobile-menu-header">
+                <!-- Titre du menu -->
+                <h3 class="mobile-menu-title">Menu</h3>
+                <!-- Bouton de fermeture -->
+                <button class="mobile-menu-close" id="mobile-menu-close">
+                    <span class="close-line"></span>
+                    <span class="close-line"></span>
+                </button>
+            </div>
+            
+            <!-- Liens de navigation mobile -->
+            <div class="mobile-nav-links">
+                <a href="#" class="mobile-nav-link active">Accueil</a>
+                <a href="#" class="mobile-nav-link">Services</a>
+                <a href="#" class="mobile-nav-link">À propos de nous</a>
+                <a href="#" class="mobile-nav-link">Confidentialité</a>
+                <a href="#" class="mobile-nav-link">Contact</a>
+            </div>
+            
+            <!-- Informations supplémentaires en bas du menu mobile -->
+            <div class="mobile-menu-footer">
+                <div class="mobile-agency-text">CREATIVE AGENCY</div>
+                <div class="mobile-contact-info">
+                    <p>© 2025 Proxima | Propulsé par Proxima | Créé par Proxima</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <!-- Conteneur principal du footer -->
+        <div class="footer-container">
+            <!-- Section supérieure du footer -->
+            <div class="footer-top">
+                <!-- Colonne de gauche : Liens de navigation -->
+                <div class="footer-nav-section">
+                    <!-- Titre de la section navigation -->
+                    <h3 class="footer-section-title">Pages</h3>
+                    <!-- Grille des liens de navigation -->
+                    <div class="footer-nav-grid">
+                        <!-- Colonne 1 : Liens principaux -->
+                        <div class="footer-nav-column">
+                            <a href="#" class="footer-nav-link">Accueil</a>
+                            <a href="#" class="footer-nav-link">Services</a>
+                            <a href="#" class="footer-nav-link">À propos de nous</a>
+                        </div>
+                        <!-- Colonne 2 : Liens supplémentaires -->
+                        <div class="footer-nav-column">
+                            <a href="#" class="footer-nav-link">Confidentialité</a>
+                            <a href="#" class="footer-nav-link">Contact</a>
+                            <a href="#" class="footer-nav-link">Technologie</a>
+                        </div>
+                        <!-- Colonne 3 : Liens des services -->
+                        <div class="footer-nav-column">
+                            <a href="#" class="footer-nav-link">Événementiel</a>
+                            <a href="#" class="footer-nav-link">Marketing</a>
+                            <a href="#" class="footer-nav-link">Support</a>
+                        </div>
+                        <!-- Colonne 4 : Liens de contact -->
+                        <div class="footer-nav-column">
+                            <a href="#" class="footer-nav-link">FAQ</a>
+                            <a href="#" class="footer-nav-link">Partenaires</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section de droite : Newsletter et réseaux sociaux -->
+                <div class="footer-right-section">
+                    <!-- Section newsletter -->
+                    <div class="newsletter-section">
+                        <!-- Titre de la newsletter -->
+                        <h3 class="footer-section-title">Rejoignez la newsletter</h3>
+                        <!-- Formulaire d'inscription -->
+                        <div class="newsletter-form">
+                            <!-- Champ email -->
+                            <input type="email" placeholder="Email*" class="newsletter-input">
+                            <!-- Bouton d'inscription -->
+                            <button class="newsletter-button">S'abonner</button>
+                        </div>
+                    </div>
+
+                    <!-- Section réseaux sociaux -->
+                    <div class="social-media-section">
+                        <!-- Icône LinkedIn -->
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!-- Icône Instagram -->
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <!-- Icône Facebook -->
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section centrale du footer -->
+            <div class="footer-middle">
+                <!-- Informations de copyright à gauche -->
+                <div class="footer-copyright">
+                    <span>© 2025 Proxima</span>
+                    <span class="separator">|</span>
+                    <span>Propulsé par Proxima</span>
+                    <span class="separator">|</span>
+                    <span>Créé par Proxima</span>
+                </div>
+
+                <!-- Liens utilitaires à droite -->
+                <div class="footer-utility-links">
+                    <a href="#" class="utility-link">Guide de style</a>
+                    <a href="#" class="utility-link">Licences</a>
+                    <a href="#" class="utility-link">Mentions légales</a>
+                    <a href="#" class="utility-link">Instructions</a>
+                </div>
+            </div>
+
+            <!-- Section inférieure du footer -->
+            <div class="footer-bottom">
+                <!-- Logo centré -->
+                <div class="footer-logo">
+                    <!-- Image SVG du logo Proxima -->
+                    <img src="assets/images/svg logo proxima top.svg" alt="Proxima Logo" class="footer-logo-image">
+                    <!-- Symbole de marque déposée -->
+                    <span class="trademark">®</span>
+                </div>
+
+                <!-- Bouton "Proposer un service" -->
+                <button class="propose-service-button">Proposer un service</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="scroll-to-top" id="scroll-to-top" title="Retour en haut">
+        <svg class="scroll-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <!-- Scripts JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
